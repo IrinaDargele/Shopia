@@ -121,7 +121,7 @@ const img = () =>
         .pipe(newer(outputPaths.img))
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
-            // imagemin.jpegtran({progressive: true}),
+            imagemin.jpegtran({progressive: true}),
             // imagemin.optipng({optimizationLevel: 5}),
             imagemin.svgo({removeViewBox: false, collapseGroups: true})
         ]))
