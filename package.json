@@ -15,11 +15,16 @@
     "jpegtran-bin": "^4.0.0",
     "jquery": "^3.3.1",
     "less": "^3.9.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.8.1"
   },
   "overrides": {
     "jquery": {
       "main": "dist/jquery.min.js"
+    },
+    "owl.carousel": {
+      "main": "dist/owl.carousel.js/owl.carousel.min.js"
     },
     "photoswipe": {
       "main": [

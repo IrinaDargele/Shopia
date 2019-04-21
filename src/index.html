@@ -5,6 +5,8 @@
     <meta name="description" content="Shophia Fashion Store Shopify.">
     <title>Shophia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+    <link rel="stylesheet" href="assets/libs/slick-carousel/slick.css">
+    <link rel="stylesheet" href="assets/libs/slick-carousel/slick-theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -39,24 +41,29 @@
                     <li><a href="#">Pages</a></li>
                 </ul>
             </nav>
+            <svg class="icon icon_burger menu-trigger">
+                <use href="assets/img/svg/svg-symbols.svg#burger"></use>
+            </svg>
             <a href="#" class="logo">Shophia</a>
+
             <div class="logo_social_icon">
-                <a href="#" class="logo_social_icon_circle">
+
+                <a href="#" class="logo_social_icon_circle" aria-label="facebook">
                     <svg class="icon icon_header">
                         <use href="assets/img/svg/svg-symbols.svg#facebook"></use>
                     </svg>
                 </a>
-                <a href="#" class="logo_social_icon_circle">
+                <a href="#" class="logo_social_icon_circle" aria-label="twitter">
                     <svg class="icon icon_header">
                         <use href="assets/img/svg/svg-symbols.svg#twitter"></use>
                     </svg>
                 </a>
-                <a href="#" class="logo_social_icon_circle">
+                <a href="#" class="logo_social_icon_circle" aria-label="instagram">
                     <svg class="icon icon_header">
                         <use href="assets/img/svg/svg-symbols.svg#instagram"></use>
                     </svg>
                 </a>
-                <a href="#" class="logo_social_icon_circle">
+                <a href="#" class="logo_social_icon_circle" aria-label="pinterest">
                     <svg class="icon icon_header">
                         <use href="assets/img/svg/svg-symbols.svg#pinterest"></use>
                     </svg>
@@ -71,21 +78,72 @@
             </div>
         </div>
     </div>
-    <div class="header_slider">
-        <div class="slider_img">
-            <img src="assets/images/slider.png" alt="slider">
-        </div>
-        <div class="slider_info">
-            <div class="slider_text">
-                <div class="slider_name1">MID-SEASON</div>
-                <div class="black_text slider_name2">SALE</div>
-                <div class="slider_name1 with_lines"><span class="before_lines"></span>UP TO<span class="after_lines"></span></div>
-                <div class="black_text slider_name3">50% OFF</div>
-
+    <div class="slider">
+        <div class="header_slider">
+            <div class="slider_img">
+                <img src="assets/images/slider.png" alt="slider">
             </div>
-            <button type="submit" class="shop_now_slider" >
-                <span>SHOP NOW</span>
-            </button>
+            <div class="slider_info">
+                <div class="slider_text">
+                    <div class="slider_name1">MID-SEASON</div>
+                    <div class="black_text slider_name2">SALE</div>
+                    <div class="slider_name1 with_lines"><span class="before_lines"></span>UP TO<span class="after_lines"></span></div>
+                    <div class="black_text slider_name3">50% OFF</div>
+
+                </div>
+                <button type="submit" class="shop_now_slider" >
+                    <span>SHOP NOW</span>
+                </button>
+            </div>
+        </div>
+        <div class="header_slider">
+            <div class="slider_img">
+                <img src="assets/images/slider.png" alt="slider">
+            </div>
+            <div class="slider_info">
+                <div class="slider_text">
+                    <div class="slider_name1">MID-SEASON</div>
+                    <div class="black_text slider_name2">SALE</div>
+                    <div class="slider_name1 with_lines"><span class="before_lines"></span>UP TO<span class="after_lines"></span></div>
+                    <div class="black_text slider_name3">50% OFF</div>
+
+                </div>
+                <button type="submit" class="shop_now_slider" >
+                    <span>SHOP NOW</span>
+                </button>
+            </div>
+        </div>
+        <div class="header_slider">
+            <div class="slider_img">
+                <img src="assets/images/slider.png" alt="slider">
+            </div>
+            <div class="slider_info">
+                <div class="slider_text">
+                    <div class="slider_name1">MID-SEASON</div>
+                    <div class="black_text slider_name2">SALE</div>
+                    <div class="slider_name1 with_lines"><span class="before_lines"></span>UP TO<span class="after_lines"></span></div>
+                    <div class="black_text slider_name3">50% OFF</div>
+                </div>
+                <button type="submit" class="shop_now_slider" >
+                    <span>SHOP NOW</span>
+                </button>
+            </div>
+        </div>
+        <div class="header_slider">
+            <div class="slider_img">
+                <img src="assets/images/slider.png" alt="slider">
+            </div>
+            <div class="slider_info">
+                <div class="slider_text">
+                    <div class="slider_name1">MID-SEASON</div>
+                    <div class="black_text slider_name2">SALE</div>
+                    <div class="slider_name1 with_lines"><span class="before_lines"></span>UP TO<span class="after_lines"></span></div>
+                    <div class="black_text slider_name3">50% OFF</div>
+                </div>
+                <button type="submit" class="shop_now_slider" >
+                    <span>SHOP NOW</span>
+                </button>
+            </div>
         </div>
     </div>
 </header>
@@ -97,8 +155,8 @@
                     <use href="assets/img/svg/svg-symbols.svg#airplane"></use>
                 </svg>
                 <div>
-                <div class="advantages_name">FREE SHIPPING</div>
-                <div>In Order Min $200</div>
+                    <div class="advantages_name">FREE SHIPPING</div>
+                    <div>In Order Min $200</div>
                 </div>
             </div>
             <div class="advantages_items advantages_centre">
@@ -106,8 +164,8 @@
                     <use href="assets/img/svg/svg-symbols.svg#clock"></use>
                 </svg>
                 <div>
-                <div class="advantages_name">30-DAYS RETURNS</div>
-                <div>Money Back  Guarantee</div>
+                    <div class="advantages_name">30-DAYS RETURNS</div>
+                    <div>Money Back  Guarantee</div>
                 </div>
             </div>
             <div class="advantages_items">
@@ -115,8 +173,8 @@
                     <use href="assets/img/svg/svg-symbols.svg#lifebuoy"></use>
                 </svg>
                 <div>
-                <div class="advantages_name">24/7 SUPPORT</div>
-                <div>Lifestyme Support</div>
+                    <div class="advantages_name">24/7 SUPPORT</div>
+                    <div>Lifestyme Support</div>
                 </div>
             </div>
         </div>
@@ -209,11 +267,7 @@
             <div class="gallery">
                 <div class="gallery_item">
                     <a class=" item_filter" href="#">
-
-
-
                         <img src="assets/images/model1.png" alt="model">
-
                     </a>
                     <div class="circle_sale20">-20%</div>
                     <button type="submit" class="add_to_cart" >
@@ -409,26 +463,26 @@
                 <div class="footer_h">STAY CONNECTED</div>
                 <div class="footer_social_icon">
                     <a href="#" class="social_icon_circle">
-                        <svg class="icon icon_footer">
+                        <svg class="icon icon_footer" aria-label="facebook">
                             <use href="assets/img/svg/svg-symbols.svg#facebook"></use>
                         </svg>
                     </a>
                     <a href="#" class="social_icon_circle">
-                        <svg class="icon icon_footer">
+                        <svg class="icon icon_footer" aria-label="twitter">
                             <use href="assets/img/svg/svg-symbols.svg#twitter"></use>
                         </svg>
                     </a>
-                    <a href="#" class="social_icon_circle">
+                    <a href="#" class="social_icon_circle" aria-label="instagram">
                         <svg class="icon icon_footer">
                             <use href="assets/img/svg/svg-symbols.svg#instagram"></use>
                         </svg>
                     </a>
-                    <a href="#" class="social_icon_circle">
+                    <a href="#" class="social_icon_circle" aria-label="pinterest">
                         <svg class="icon icon_footer">
                             <use href="assets/img/svg/svg-symbols.svg#pinterest"></use>
                         </svg>
                     </a>
-                    <a href="#" class="social_icon_circle">
+                    <a href="#" class="social_icon_circle" aria-label="rss">
                         <svg class="icon icon_footer">
                             <use href="assets/img/svg/svg-symbols.svg#rss"></use>
                         </svg>
@@ -463,5 +517,11 @@
         </div>
     </div>
 </footer>
+<div id="scroller">
+
+</div>
+<script src="assets/libs/jquery/jquery.min.js"></script>
+<script src="assets/libs/slick-carousel/slick.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
