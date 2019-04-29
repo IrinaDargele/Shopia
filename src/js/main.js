@@ -9,7 +9,11 @@ $(document).ready(function() {
     });
 
     $('.menu-trigger').on("click", function() {
-        $('.header_nav').slideToggle('slow');
+        $('.header_nav').stop(true).slideToggle('slow', function(){
+            if($('.header_nav').is(':hidden')){
+                $('.header_nav').removeAttr('style');
+            }
+        });
     });
 
     $(window).scroll(function () {

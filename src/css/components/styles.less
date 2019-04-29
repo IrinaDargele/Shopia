@@ -221,14 +221,36 @@ img{
   margin-left: 40px;
 }
 
+
 .currency{
   background: black;
+  border: none;
   color: white;
   font-size: 12px;
   padding: 10px 30px 10px 15px;
-  -webkit-appearance: none;
-  background: url("../images/arrow_to_down.png");
-  background-position: 95% 50%;
+ --webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.currency_selection{
+  position: relative;
+}
+
+.currency:hover{
+  cursor: pointer;
+}
+
+.currency_selection:after{
+  content: "";
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #fff transparent transparent transparent;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  z-index: 1;
 }
 
 .icon_header{
@@ -846,6 +868,9 @@ footer{
   .designer_about p{
     margin: 10px 0;
   }
+  .footer_info{
+    margin-right: 30px;
+  }
 }
 
 @media screen and (max-width: 1180px) {
@@ -973,10 +998,15 @@ footer{
   }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 944px) {
   .footer_info{
-    margin-right: 30px;
+    margin-right: 80px;
   }
+
+}
+
+@media screen and (max-width: 880px) {
+
 
   .slider_name1{
     margin: 10px;
@@ -993,6 +1023,10 @@ footer{
 @media screen and (max-width: 820px) {
   .advantages_items{
     justify-content: center;
+  }
+
+  .footer_info{
+    margin-right: 30px;
   }
 }
 
@@ -1167,9 +1201,21 @@ footer{
     padding: 10px;
   }
 
-  .handpicked3{
+  .handpicked3 {
     font-size: 30px;
   }
+
+  .wrapper {
+    padding: 0px 10px;
+  }
+
+  .header_login li {
+    padding-left: 5px;
+    margin-right: 5px;
+
+  }
+
+
 }
 
 
